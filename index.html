@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="M. C.">
+  <link rel="icon" href="savorra.jpg" type="image/x-icon">
+  <title>SAVORRA CAFFÉ - Meniu</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="nav">
+      <div class="brand">
+        <div class="brand-logo"><img src="savorra.jpg" alt=""></div>
+        <span>SAVORRA CAFFÉ</span>
+      </div>
+      <select class="lang-select" id="lang">
+        <option value="ro">RO</option>
+        <option value="ru">RU</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>SAVORRA CAFFÉ</h1>
+      <p>Doar la SAVORRA ai șansa să savurezi!</p>
+    </div>
+  </section>
+
+
+  <div class="menu-links">
+    <a href="#gustari">Gustări</a>
+    <a href="#salate">Salate | Garnituri</a>
+    <a href="#paste">Paste</a>
+    <a href="#pizza">Pizza</a>
+    <a href="#peste">Bucate din pește</a>
+    <a href="#carne">Bucate din carne</a>
+    <a href="#supe">Supe</a>
+    <a href="#desert">Desert</a>
+    <a href="#bauturi">Vinuri</a>
+
+    <a href="#tarie">Tărie & Liquior</a>
+    <a href="#bere">Bere</a>
+    <a href="#cocktails">Cocktails</a>
+    <a href="#limonade">Limonade & Băuturi Carbogazoase</a>
+    <a href="#ceai">Ceai & Cafea</a>
+  </div>
+
+  <section class="section" id="meniu">
+    <div class="container">
+      <h2 id="gustari">GUSTĂRI</h2>
+      <div class="grid" id="grid-gustari"></div>
+
+      <h2 id="salate">SALATE | GARNITURI</h2>
+      <div class="grid" id="grid-salate"></div>
+
+      <h2 id="paste">PASTE</h2>
+      <div class="grid" id="grid-paste"></div>
+
+      <h2 id="pizza">PIZZA</h2>
+      <div class="grid" id="grid-pizza"></div>
+
+      <h2 id="peste">BUCATE DIN PEȘTE</h2>
+      <div class="grid" id="grid-peste"></div>
+
+      <h2 id="carne">BUCATE DIN CARNE</h2>
+      <div class="grid" id="grid-carne"></div>
+
+      <h2 id="supe">SUPE</h2>
+      <div class="grid" id="grid-supe"></div>
+
+      <h2 id="desert">DESERT</h2>
+      <div class="grid" id="grid-desert"></div>
+
+
+
+      <h2 id="bauturi">VINURI</h2>
+      <div class="bauturi-grid" id="grid-bauturi"></div>
+
+      <h2 id="tarie">TĂRIE & LICHIOR</h2>
+      <div class="bauturi-grid" id="grid-tarie"></div>
+
+      <h2 id="bere">BERE</h2>
+      <div class="bauturi-grid" id="grid-bere"></div>
+
+      <h2 id="cocktails">COCKTAILS</h2>
+      <div class="bauturi-grid" id="grid-cocktails"></div>
+
+      <h2 id="limonade">LIMONADE & BĂUTURI CARBOGAZOASE</h2>
+      <div class="bauturi-grid" id="grid-limonade"></div>
+
+      <h2 id="ceai">CEAI & CAFEA</h2>
+      <div class="bauturi-grid" id="grid-ceai"></div>
+
+    </div>
+  </section>
+
+  <div class="product-page" id="productPage">
+    <button class="close-full" id="closeFull">×</button>
+    <img id="prodImg" class="product-img" src="" alt="">
+    <div class="product-details">
+      <h2 id="prodName"></h2>
+      <p id="prodDesc"></p>
+      <div class="product-alergeni" id="prodAlergeni"></div> <br>
+      <div class="price" id="prodPrice"></div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; <span id="currentYear"></span> "SAVORRA CAFFÉ" | Toate drepturile rezervate.<br>
+    <script>
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    Creat și dezvoltat de
+    <a href="http://linktr.ee/marryyus" target="_blank">M.C.</a>
+  </footer>
+
+  <script src="ro.js"></script>
+<script src="ru.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
