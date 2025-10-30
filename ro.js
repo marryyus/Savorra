@@ -2,7 +2,7 @@ window.meniuRO = {
  gustari: [
     {
       nume: 'PLATOU CU CAȘCAVALURI',
-      pret: 280,
+      pret: 250,
       gramaj: '460g',
       img: 'cascaval.webp',
       descriere: 'Camembert, Grano Padano, Emmental, Danish Blue, Mozzarella, Struguri, Parmezan, Crakers, Miere',
@@ -10,7 +10,7 @@ window.meniuRO = {
     },
     {
       nume: 'SALATĂ CU PROSCIUTTO',
-      pret: 110, 
+      pret: 99, 
       gramaj: '245g',
       img: 'prosciutto.webp',
       descriere: 'Mozzarela, Prosciutto, Olive, Cherry, Salată Mix, Ulei de măsline',
@@ -26,7 +26,7 @@ window.meniuRO = {
     },
     {
       nume: 'PLATOU CU CĂRNURI',
-      pret: 280,
+      pret: 250,
       gramaj: '615g',
       img: 'carnuri.webp',
       descriere: 'Piept țărănesc. Ceafă afumată, Tobă naturală, Cabanossi, Muștar, Ardei, Verdeață',
@@ -34,7 +34,7 @@ window.meniuRO = {
     },
      {
       nume: 'PLATOU LA BERE',
-      pret: 250, 
+      pret: 210, 
       gramaj:'',
       img: '',
       descriere: 'Aripioare de pui picante, Nuggets de pui, Cartofi pai',
@@ -42,14 +42,14 @@ window.meniuRO = {
     },
 
     { nume: 'ARIPIOARE DE PUI PICATE', 
-      pret: 80, 
+      pret: 70, 
        gramaj:'200g',
       img: '',
        descriere: 'Aripioare de pui picante crispy servite cu sos', 
        alergeni: ['https://cdn-icons-png.flaticon.com/512/112/112431.png','https://cdn-icons-png.flaticon.com/512/9293/9293703.png', 'https://cdn-icons-png.flaticon.com/512/2789/2789871.png', 'https://cdn-icons-png.flaticon.com/512/1811/1811973.png', 'https://cdn-icons-png.flaticon.com/512/5951/5951069.png'] },
        {
       nume: 'CARTOFI PAI',
-      pret: 45, 
+      pret: 35, 
        gramaj:'200g',
       img: '',
       descriere: 'Cartofi pai serviți cu sos',
@@ -76,7 +76,7 @@ window.meniuRO = {
     } ,
        { 
       nume: 'SALATĂ GRECEASCĂ',
-      pret: 70,
+      pret: 65,
       gramaj: '325g',
       img: 'greceasca.webp',
       descriere: 'Castraveți, Roșii, Ceapă roșie, Ardei dulce, Măsline, Brânză feta, Mix salată', 
@@ -92,7 +92,7 @@ window.meniuRO = {
     } ,
        { 
       nume: 'SALATĂ CALDĂ CU PIEPT DE PUI SERVITĂ CU SOS PICANT',
-      pret: 100,
+      pret: 95,
       gramaj: '375g',
       img: 'salata pui.webp',
       descriere: 'Ceapă roșie, Zuchinni, Ardei capia, Usturoi, Ardei iute, Sos Chilli, Ceapă verde, Piept de pui', 
@@ -100,7 +100,7 @@ window.meniuRO = {
     } ,
        { 
       nume: 'SALATĂ CALDĂ CU CEAFĂ DE PORC SERVITĂ CU SOS PICANT',
-      pret: 120,
+      pret: 105,
       gramaj: '425g',
       img: '',
       descriere: 'Ceapă roșie, Zuchinni, Ardei capia, Usturoi, Ardei iute, Sos Chilli, Ceapă verde, Ceafă de porc', 
@@ -108,7 +108,7 @@ window.meniuRO = {
     } ,
        { 
       nume: 'CIUPERCI LA TIGAIE ',
-      pret: 50,
+      pret: 45,
       gramaj: '375g',
       img: 'ciuperci.webp',
       descriere: 'Ciuperci, Usturoi, Ceapă, Pătrunjel', 
@@ -116,7 +116,7 @@ window.meniuRO = {
     } ,
        { 
       nume: 'LEGUME COAPTE',
-      pret: 90,
+      pret: 70,
       gramaj: '300g',
       img: 'legume coapte.webp',
       descriere: 'Vinete, Zuchinni, Ardei capia, Roșii, Ciuperci, Condimente la grătar/Oregano/Busuioc', 
@@ -144,7 +144,7 @@ window.meniuRO = {
     },
     { 
       nume: 'PASTE CARBONARA', 
-      pret: 90,
+      pret: 85,
       gramaj: '195g',
       img: '', 
       descriere: 'Bacon, Gălbenuș de ou, Paste, Parmezan', 
@@ -156,7 +156,7 @@ window.meniuRO = {
   pizza: [
      { 
       nume: 'KIDS MENU', 
-      pret: 70,
+      pret: 55,
       gramaj: '',
       img: '', 
       descriere: 'Cartofi pai, Nuggets de pui', 
@@ -164,7 +164,7 @@ window.meniuRO = {
     },
     { 
       nume: 'PIZZA DE CASĂ “QUATTRO FORMAGGI “', 
-      pret: 110,
+      pret: 100,
       gramaj: '400g',
       img: '', 
       descriere: 'Aluat, Sos de roșii/ Smântână dulce, Mozzarella, Dor Blue, Grano Padano, Edamer, Oregano', 
@@ -172,7 +172,7 @@ window.meniuRO = {
     },
     { 
       nume: 'PIZZA DE CASĂ “EXPRESS”', 
-      pret: 110,
+      pret: 100,
       gramaj: '400g',
       img: '', 
       descriere: 'Aluat, Piept de pui, Ciuperci, Mozzarella, Edamer, Masline, Sos roșu', 
@@ -180,7 +180,7 @@ window.meniuRO = {
     },
     { 
       nume: 'PIZZA DE CASĂ “MARGHERITA”', 
-      pret: 90,
+      pret: 85,
       gramaj: '400g',
       img: '', 
       descriere: 'Aluat, Sos de roșii, Mozzarella, Busuioc, Ulei de măsline extravirgin, Sare, Oregano', 
@@ -188,7 +188,7 @@ window.meniuRO = {
     },
     { 
       nume: 'PIZZA DE CASĂ “SAVORRA”', 
-      pret: 110,
+      pret: 100,
       gramaj: '400g',
       img: '', 
       descriere: 'Aluat, Șuncă, Mozzarella, Rucola, Edamer, Parmezan', 
@@ -220,7 +220,7 @@ window.meniuRO = {
   carne: [
        { 
       nume: 'PIEPT DE PUI SAVORRA', 
-      pret: 160,
+      pret: 140,
       gramaj: '370g',
       img: 'piept pui.webp', 
       descriere: 'Piept de pui, Cascaval Dor Blue, Bri, Emmental, Frișcă, Morcov, Păstăi, Usturoi', 
@@ -228,7 +228,7 @@ window.meniuRO = {
     },
     { 
       nume: 'MĂMĂLIGĂ', 
-      pret: 155,
+      pret: 135,
       gramaj: '400g',
       img: '', 
       descriere: 'Mămăligă. Friptură de porc. Brânză de oi, Smântână', 
@@ -236,7 +236,7 @@ window.meniuRO = {
     },
      { 
       nume: 'COTLET DE PORC', 
-      pret: 160,
+      pret: 140,
       gramaj: '300g',
       img: 'cotlet porc.webp', 
       descriere: 'Steak de porc', 
@@ -244,7 +244,7 @@ window.meniuRO = {
     },
      { 
       nume: 'BURGER CU CARNE DE PORC-VITĂ', 
-      pret: 100,
+      pret: 80,
       gramaj: '300g',
       img: 'burger.webp', 
       descriere: 'Carne de porc-vită, Ceapă roșie. Castraveți marinați, Cașcaval Cheddar, Salată iceberg, Chiflă, Roșii, Sos pentru burger', 
@@ -255,7 +255,7 @@ window.meniuRO = {
   supe: [
        { 
       nume: 'ZEAMĂ DE PUI CU TĂIȚEI DE CASĂ', 
-      pret: 60,
+      pret: 50,
       gramaj: '400ml',
       img: '', 
       descriere: 'Carne de pui, tăiței de casă', 
@@ -263,7 +263,7 @@ window.meniuRO = {
     },
     { 
       nume: 'SOLEANCĂ AROMATĂ', 
-      pret: 70,
+      pret: 65,
       gramaj: '400ml',
       img: 'soleanca aromata.webp', 
       descriere: 'Mix cărnuri, lămâie', 
@@ -275,7 +275,7 @@ window.meniuRO = {
   desert: [
     { 
       nume: 'BABĂ NEAGRĂ', 
-      pret: 70,
+      pret: 60,
       gramaj: '',
       img: '', 
       descriere: 'Babă neagră cu înghețată', 
@@ -283,7 +283,7 @@ window.meniuRO = {
     },
     { 
       nume: 'CROISSANT CU CIOCOLATĂ', 
-      pret: 40,
+      pret: 35,
       gramaj: '',
       img: '', 
       descriere: 'Croissant umplut cu ciocolată', 
@@ -291,7 +291,7 @@ window.meniuRO = {
     },
     { 
       nume: 'CHEESECAKE', 
-      pret: 65,
+      pret: 55,
       gramaj: '',
       img: '', 
       descriere: '', 
@@ -350,8 +350,10 @@ tarie: [
 
 bere: [
   { nume: 'BERE STELLA 0.5L', pret: 55 },
-  { nume: 'BERE CORONA 0.5L', pret: 55 },
-  { nume: 'BERE EFFES 0.5L', pret: 35 }
+  { nume: 'BERE CORONA 0.33L', pret: 55 },
+  { nume: 'BERE EFFES 0.5L', pret: 35 },
+   { nume: 'BERE KOZEL BRUNĂ 0.5L', pret: 37 },
+  { nume: 'BERE STARÎI MELNIK 0.5L', pret: 30 }
 ],
 cocktails: [
   { nume: 'PINA COLADA', pret: 65 },
