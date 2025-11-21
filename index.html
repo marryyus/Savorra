@@ -210,6 +210,50 @@
   <script src="ru.js"></script>
   <script src="script.js"></script>
 
+
+<script>
+(function () {
+  const menu = window.meniuRO;
+  if (!menu) return;
+
+  const categories = Object.keys(menu);
+
+  const itemList = categories.map(cat => ({
+    "@type": "MenuSection",
+    "name": cat,
+    "hasMenuItem": menu[cat].map(item => ({
+      "@type": "MenuItem",
+      "name": item.nume,
+      "description": item.descriere || "",
+      "offers": {
+        "@type": "Offer",
+        "price": item.pret,
+        "priceCurrency": "MDL"
+      }
+    }))
+  }));
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Meniu SAVORRA CAFFÉ",
+    "hasMenuSection": itemList
+  };
+
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+
+})();
+</script>
+
+
+
+
+
+
+  
 </body>
 
 </html>
