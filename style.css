@@ -279,12 +279,26 @@ header.scrolled {
 
 .bauturi-item {
   display: flex;
-  justify-content: space-between;
   padding: 10px 14px;
   background: var(--bg-2);
   border-radius: var(--radius);
-  font-size: 15px
+  font-size: 15px;
+  align-items: center;
 }
+
+.bauturi-item > *:first-child {
+  flex: 1;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.bauturi-item > *:last-child {
+  white-space: nowrap;
+  margin-left: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
 
 .price-row {
   display: flex;
