@@ -57,7 +57,6 @@ const texte = {
 let currentLang = 'ro';
 let meniuCurent = meniuRO;
 
-// animație la scroll pentru produse
 document.addEventListener("DOMContentLoaded", () => {
   const produse = document.querySelectorAll(".card, .bauturi-item");
 
@@ -88,7 +87,8 @@ function createCard(p) {
     ? `<div class='allergen-group'>${p.alergeni.map(a => `<img src='${a}' alt='alergen'>`).join('')}</div>`
     : '';
   card.innerHTML = `
-    ${p.img ? `<img src='${p.img}' alt='${p.nume}'>` : `<div style='height:300px'></div>`}
+    ${p.img ? `<img src='${p.img}' alt='${p.nume}'>` : `<img src="default.jpg" alt="default">`}
+
     ${alergeniHTML}
     <div class='content'>
       <div class='title'>${p.nume}</div>
@@ -137,9 +137,14 @@ const prodDesc = document.getElementById('prodDesc');
 const prodAlergeni = document.getElementById('prodAlergeni');
 const prodPrice = document.getElementById('prodPrice');
 document.getElementById('closeFull').onclick = () => productPage.classList.remove('open');
+setTimeout(() => {
+  productPage.style.display = "none";
+}, 100);
+
 
 function openFullPage(p) {
-  prodImg.src = p.img || '';
+ prodImg.src = p.img && p.img !== '' ? p.img : 'default.jpg';
+
   prodName.textContent = p.nume;
   prodDesc.textContent = p.descriere;
   prodPrice.innerHTML = `
@@ -148,7 +153,11 @@ function openFullPage(p) {
   prodAlergeni.innerHTML = p.alergeni && p.alergeni.length
     ? p.alergeni.map(a => `<img src='${a}' alt='alergen'>`).join('')
     : '';
+  productPage.style.display = "flex";
+setTimeout(() => {
   productPage.classList.add('open');
+}, 10);
+
   productPage.scrollTo(0, 0);
 }
 
