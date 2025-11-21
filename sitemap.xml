@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://savorra.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#gustari</loc>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#salate</loc>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#paste</loc>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#pizza</loc>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#peste</loc>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#carne</loc>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#supe</loc>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#desert</loc>
+  </url>
+  <url>
+    <loc>https://savorra.vercel.app/#bauturi</loc>
+  </url>
+</urlset>
