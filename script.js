@@ -1,3 +1,55 @@
+async function loadMenuFromSheet() {
+    const sheetUrl = "https://opensheet.elk.sh/1Xc0qzjSxCxvF7YLe_s05Qvu2LYEerL66Z0X7RPmejm4/1";
+    const data = await fetch(sheetUrl).then(r => r.json());
+
+    const menuRO = {};
+    const menuRU = {};
+
+    data.forEach(row => {
+      if (!row.nume_ro || row.nume_ro.trim() === "") return;
+        const cat = row.categorie.trim();
+
+        if (!menuRO[cat]) menuRO[cat] = [];
+        if (!menuRU[cat]) menuRU[cat] = [];
+
+        const alergeni = row.alergeni ? row.alergeni.split(",").map(a => a.trim()) : [];
+
+        const baseObj = {
+            pret: String(row.pret),
+            gramaj: row.gramaj,
+            img: row.img,
+            alergeni
+        };
+
+        menuRO[cat].push({
+            ...baseObj,
+            nume: row.nume_ro,
+            descriere: row.descriere_ro
+        });
+
+        menuRU[cat].push({
+            ...baseObj,
+            nume: row.nume_ru,
+            descriere: row.descriere_ru
+        });
+    });
+
+    window.meniuRO = menuRO;
+    window.meniuRU = menuRU;
+}
+history.scrollRestoration = "manual";
+
+window.addEventListener('hashchange', () => {
+    history.replaceState("", document.title, window.location.pathname + window.location.search);
+});
+
+window.addEventListener("load", () => {
+    window.scrollTo(0, 0);
+});
+
+
+
+
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) header.classList.add('scrolled');
@@ -5,8 +57,9 @@ window.addEventListener('scroll', () => {
 });
 
 
-const meniuRO = window.meniuRO;
-const meniuRU = window.meniuRU;
+let meniuRO = {};
+let meniuRU = {};
+
 
 
 const texte = {
@@ -200,6 +253,14 @@ function setLanguage(lang) {
 
   updateMenuLinks(lang); 
   render();
+
+  if (lang === "ru") {
+    history.pushState({}, "", "/#/ru");
+} else {
+    history.pushState({}, "", "/");
+}
+
+
 }
 
 
@@ -207,4 +268,17 @@ document.getElementById('lang').addEventListener('change', e => {
   setLanguage(e.target.value);
 });
 
-render();
+loadMenuFromSheet().then(() => {
+    meniuRO = window.meniuRO;
+    meniuRU = window.meniuRU;
+    meniuCurent = meniuRO;
+
+    if (location.hash === "#/ru") {
+        document.getElementById("lang").value = "ru";
+        setLanguage("ru");
+    } else {
+        setLanguage("ro");
+    }
+});
+
+

@@ -199,7 +199,7 @@ window.meniuRO = {
 
   peste: [
     { 
-      nume: 'DORADO LA CUPTOR ', 
+      nume: 'DORADO LA CUPTOR', 
       pret: 250,
       gramaj: '450g',
       img: '', 
