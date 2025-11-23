@@ -12,7 +12,16 @@ async function loadMenuFromSheet() {
         if (!menuRO[cat]) menuRO[cat] = [];
         if (!menuRU[cat]) menuRU[cat] = [];
 
-        const alergeni = row.alergeni ? row.alergeni.split(",").map(a => a.trim()) : [];
+        // const alergeni = row.alergeni ? row.alergeni.split(",").map(a => a.trim()) : [];
+        const alergeni = row.alergeni
+  ? row.alergeni.split(",").map(a => {
+      const clean = a.trim().toLowerCase();
+      if (clean.startsWith("http")) return clean;
+      return ALERGENI_MAP[clean] || "";
+    })
+  : [];
+
+
 
         const baseObj = {
             pret: String(row.pret),
@@ -51,6 +60,20 @@ window.addEventListener("load", () => {
 
 
 const header = document.getElementById('header');
+
+const ALERGENI_MAP = {
+  "lactoza":     "https://cdn-icons-png.flaticon.com/512/112/112431.png",
+  "miere":    "https://cdn-icons-png.flaticon.com/512/656/656384.png",
+  "gluten":       "https://cdn-icons-png.flaticon.com/512/9293/9293703.png",
+  "oua":       "https://cdn-icons-png.flaticon.com/512/2789/2789871.png",
+  "soia":      "https://cdn-icons-png.flaticon.com/512/5951/5951069.png",
+  "mustar":  "https://cdn-icons-png.flaticon.com/512/1811/1811973.png",
+  "peste":        "https://cdn-icons-png.flaticon.com/512/811/811643.png",
+  "ciuperci":      "https://cdn-icons-png.flaticon.com/512/782/782225.png",
+  "so2":      "https://cdn-icons-png.flaticon.com/128/5289/5289110.png",
+  "creveti":     "https://cdn-icons-png.flaticon.com/512/3071/3071050.png"
+};
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) header.classList.add('scrolled');
   else header.classList.remove('scrolled');
