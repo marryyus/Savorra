@@ -32,13 +32,13 @@ async function loadMenuFromSheet() {
 
         menuRO[cat].push({
             ...baseObj,
-            nume: row.nume_ro,
+            nume: row.nume_ro.toUpperCase(),
             descriere: row.descriere_ro
         });
 
         menuRU[cat].push({
             ...baseObj,
-            nume: row.nume_ru,
+            nume: row.nume_ru.toUpperCase(),
             descriere: row.descriere_ru
         });
     });
